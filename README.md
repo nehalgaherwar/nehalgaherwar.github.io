@@ -2,9 +2,7 @@
 
 This is my personal **portfolio website**, built using **HTML and CSS**, to showcase my education, skills, projects, and achievements.
 
-🔗 **Live Preview**: (Add GitHub Pages link here if deployed)
-
----
+🔗 **Live Preview**: https://nehalgaherwar.github.io
 
 ## 👤 About Me
 
@@ -74,6 +72,7 @@ I enjoy:
 ## 📬 Contact
 
 - 📧 Email: [nehalgaherwar23@gmail.com](mailto:nehalgaherwar23@gmail.com)
+- 💼 Linkedin : https://www.linkedin.com/in/nehal-gaherwar-854073378
 - 📍 Location: Nagpur, Maharashtra, India
 
 ---
