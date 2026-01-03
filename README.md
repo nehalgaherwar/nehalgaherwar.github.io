@@ -52,10 +52,10 @@ I enjoy:
 ## 🎓 Education
 
 - **B.Tech – Information Technology**  
-  Ratan Tata Maharashtra State Skill University  
+  Ratan Tata Maharashtra State Skill University  (RTMSSU)
 
 - **HSC (Science)**  
-  Om Saty Sai Junior College  
+  Om Saty Sai Junior College  (OSSJC)
 
 - **SSC**  
   Pride Convent and School  
@@ -66,6 +66,7 @@ I enjoy:
 
 - **Data Analytics Job Simulation** – Deloitte Australia  
 - **Data Visualization: Empowering Business with Effective Insights**
+- **Hp gaming garage edx - Game development
 
 ---
 
