@@ -41,3 +41,48 @@ I enjoy:
 
 ## 📂 Project Structure
 
+---
+
+## 📌 Selected Projects
+
+- **Portfolio Website** – Personal responsive website  
+- **Data Visualization Demo** – Dashboard and chart-based insights  
+- **Edusafe Web Page** – SIH 2025 project under Disaster Management theme  
+
+---
+
+## 🎓 Education
+
+- **B.Tech – Information Technology**  
+  Ratan Tata Maharashtra State Skill University  
+
+- **HSC (Science)**  
+  Om Saty Sai Junior College  
+
+- **SSC**  
+  Pride Convent and School  
+
+---
+
+## 📜 Certificates
+
+- **Data Analytics Job Simulation** – Deloitte Australia  
+- **Data Visualization: Empowering Business with Effective Insights**
+
+---
+
+## 📬 Contact
+
+- 📧 Email: [nehalgaherwar23@gmail.com](mailto:nehalgaherwar23@gmail.com)
+- 📍 Location: Nagpur, Maharashtra, India
+
+---
+
+## 📄 License
+
+This project is open-source and free to use for learning and inspiration.
+
+---
+
+© 2026 **Nehal Gaherwar**
+
