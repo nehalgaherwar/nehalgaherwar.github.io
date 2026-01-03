@@ -1,0 +1,191 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nehal Gaherwar — Portfolio</title>
+  <style>
+    :root{
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --accent:#0b74da;
+      --muted:#6b7280;
+      --glass: rgba(11,116,218,0.06);
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f1724;line-height:1.5}
+    .container{max-width:1100px;margin:28px auto;padding:24px}header{display:flex;gap:20px;align-items:center}
+.avatar{width:120px;height:120px;border-radius:14px;overflow:hidden;flex:0 0 120px;box-shadow:0 6px 18px rgba(12,20,40,0.06)}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.hero{flex:1}
+h1{margin:0;font-size:1.6rem}
+p.role{margin:6px 0;color:var(--muted)}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.pill{background:var(--card);padding:8px 12px;border-radius:999px;box-shadow:0 2px 10px rgba(12,20,40,0.04);font-size:0.9rem}
+
+main{display:grid;grid-template-columns:1fr 320px;gap:22px;margin-top:22px}
+.card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 8px 30px rgba(12,20,40,0.04)}
+.section{margin-bottom:16px}
+h2{font-size:1.05rem;margin:0 0 10px 0}
+.about p{margin:0;color:#111827}
+
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.project{padding:12px;border-radius:10px;background:linear-gradient(180deg,var(--glass),transparent);min-height:90px}
+.project h3{margin:0;font-size:0.95rem}
+.project p{margin:6px 0 0;color:var(--muted);font-size:0.9rem}
+
+.edu-item,.exp-item,.cert-item{padding:10px;border-radius:8px;background:rgba(15,23,36,0.02);margin-bottom:8px}
+.small{font-size:0.85rem;color:var(--muted)}
+aside{position:relative}
+.side-card{position:sticky;top:24px}
+.skills{display:flex;flex-direction:column;gap:8px}
+.skill{display:flex;justify-content:space-between;align-items:center}
+.skill .bar{height:10px;background:rgba(11,116,218,0.12);border-radius:999px;flex:1;margin-left:10px;overflow:hidden}
+.skill .fill{height:100%;background:var(--accent);border-radius:999px;width:60%}
+
+.contact a{display:inline-block;padding:10px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none}
+
+footer{text-align:center;color:var(--muted);margin:18px 0}
+@media(max-width:880px){
+  main{grid-template-columns:1fr}
+  .avatar{width:96px;height:96px}
+  header{flex-direction:column;align-items:flex-start}
+  .meta{gap:8px}
+  .side-card{position:static}
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">
+        <!-- Replace src with your photo -->
+        <img src="profile-pic.png" alt="Nehal Gaherwar">
+      </div>
+      <div class="hero">
+        <h1>Nehal Gaherwar</h1>
+        <p class="role">Student — B.Tech (Information Technology) at Ratan Tata Maharashtra state skill University</p>
+        <div class="meta">
+          <div class="pill">Location: Nagpur, Maharashtra, India</div>
+          <div class="pill">Open to work</div>
+          <div class="pill">Engineering • English</div>
+        </div>
+      </div>
+    </header><main>
+  <div>
+    <section class="card section about">
+      <h2>About</h2>
+      <p>I'm a B.Tech student in Information Technology at Ratan Tata Maharashtra state skill University. I enjoy building practical solutions, learning data analytics and visualization, and working on web and software projects.</p>
+    </section>
+
+    <section class="card section">
+      <h2>Selected Projects</h2>
+      <div class="projects">
+        <article class="project">
+          <h3>Portfolio Website</h3>
+          <p>A responsive personal site built with HTML &amp; CSS to showcase projects and resume.</p>
+        </article>
+
+        <article class="project">
+          <h3>Data Visualization Demo</h3>
+          <p>Interactive charts and dashboards to present insights from public datasets (certificate project).</p>
+        </article>
+
+        <article class="project">
+          <h3>Edusafe web page</h3>
+          <p>For SIH 2025 we make Edusafe web page under the disaster management theme.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card section">
+      <h2>Experience</h2>
+      <div class="exp-item">
+        <div class="small">workshop / Internship</div>
+        <strong>Student / Intern</strong>
+        <div class="small">participant in SIH-2025</div>
+        <p class="small" style="margin-top:6px">Worked on college projects, data tasks and learning full-stack basics. Willing to take on practical internships to gain product experience.</p>
+      </div>
+    </section>
+
+    <section class="card section">
+      <h2>Education</h2>
+      <div class="edu-item">
+        <strong>Ratan tata Maharashtra state skill University</strong>
+        <div class="small">B.Tech — Information Technology</div>
+      </div>
+      <div class="edu-item">
+        <strong>Om Saty-Sai jr.college</strong>
+        <div class="small">Higher Secondary Certificate — HSC, Science</div>
+      </div>
+        <div class="edu-item">
+        <strong>Pride convent and school</strong>
+        <div class="small">Secondary School Certificate — SSC, General</div>
+      </div>
+    </section>
+
+    <section class="card section">
+      <h2>Certificates</h2>
+      <div class="cert-item">
+        <strong>Data Analytics Job Simulation</strong>
+        <div class="small">Deloitte Australia — completed</div>
+      </div>
+      <div class="cert-item">
+        <strong>Data Visualization: Empowering Business with Effective Insights</strong>
+        <div class="small">Job Simulation</div>
+      </div>
+    </section>
+
+  </div>
+
+  <aside>
+    <div class="side-card">
+      <section class="card section">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="skill">
+            <div>HTML &amp; CSS</div>
+            <div class="bar"><div class="fill" style="width:84%"></div></div>
+          </div>
+          <div class="skill">
+            <div>Data Analysis</div>
+            <div class="bar"><div class="fill" style="width:68%"></div></div>
+          </div>
+          <div class="skill">
+            <div>Visualization</div>
+            <div class="bar"><div class="fill" style="width:64%"></div></div>
+          </div>
+          <div class="skill">
+            <div>Communication</div>
+            <div class="bar"><div class="fill" style="width:70%"></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card section contact">
+        <h2>Contact</h2>
+        <p class="small">Let's connect — email me or download my resume.</p>
+        <p style="margin-top:12px">
+          <a href="mailto:nehalgaherwar23@gmail.com" target="_blank">Email Nehal</a>
+        </p>
+        <p class="small" style="margin-top:10px">Location: Nagpur, Maharashtra</p>
+      </section>
+
+      <section class="card section">
+        <h2>Interests</h2>
+        <div class="small">Startups, Data Visualization, Web Development, Technology Insights</div>
+      </section>
+    </div>
+  </aside>
+</main>
+
+<footer>
+  <div>&#169 2025 by Nehal Gaherwar</div>
+</footer>
+
+  </div>
+</body>
+</html>
