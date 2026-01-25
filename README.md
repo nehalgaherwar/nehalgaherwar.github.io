@@ -1,88 +1,105 @@
-# 🌐 Nehal Gaherwar — Portfolio Website
+🌐 Nehal Gaherwar — Portfolio Website
 
-This is my personal **portfolio website**, built using **HTML and CSS**, to showcase my education, skills, projects, and achievements.
+Welcome to my personal portfolio website, built using HTML, CSS, and JavaScript, to showcase my education, skills, projects, and achievements in a clean and modern way.
 
-🔗 **Live Preview**: https://nehalgaherwar.github.io
+🔗 Live Preview:
+👉 https://nehalgaherwar.github.io
 
-## 👤 About Me
+👤 About Me
 
-I am **Nehal Gaherwar**, a **B.Tech Information Technology student** at  
-**Ratan Tata Maharashtra State Skill University**.
+Hi 👋 I’m Nehal Gaherwar, a B.Tech Information Technology student at
+Ratan Tata Maharashtra State Skill University (RTMSSU).
 
-I enjoy:
-- Building clean and responsive web interfaces
-- Learning **Data Analytics & Data Visualization**
-- Working on practical and real-world projects
-- Exploring technology and startup ideas
+I am passionate about:
 
----
+Building clean, responsive, and user-friendly web interfaces
 
-## 🚀 Features
+Learning Data Analytics & Data Visualization
 
-- Responsive modern UI
-- Clean card-based layout
-- Skills section with progress bars
-- Projects, education, experience, and certificates
-- Sticky sidebar for quick access
-- Mobile-friendly design
+Working on practical, real-world projects
 
----
+Exploring technology, startups, and innovation
 
-## 🛠️ Technologies Used
+I actively improve my skills through projects, certifications, and continuous learning.
 
-- **HTML5**
-- **CSS3**
-- Responsive design (Flexbox & Grid)
-- No frameworks – pure frontend
+🚀 Features
 
----
+✨ Modern & responsive UI
 
-## 📂 Project Structure
+🧱 Clean card-based layout
 
----
+📊 Skills section with animated progress bars
 
-## 📌 Selected Projects
+📁 Projects, education, experience & certificates
 
-- **Portfolio Website** – Personal responsive website  
-- **Data Visualization Demo** – Dashboard and chart-based insights  
-- **Edusafe Web Page** – SIH 2025 project under Disaster Management theme  
+📌 Sticky sidebar for quick navigation
 
----
+📱 Fully mobile-friendly design
 
-## 🎓 Education
+🖨️ Resume printable as PDF
 
-- **B.Tech – Information Technology**  
-  Ratan Tata Maharashtra State Skill University  (RTMSSU)
+🛠️ Technologies Used
 
-- **HSC (Science)**  
-  Om Saty Sai Junior College  (OSSJC)
+HTML5
 
-- **SSC**  
-  Pride Convent and School  
+CSS3
 
----
+JavaScript
 
-## 📜 Certificates
+Responsive design using Flexbox & Grid
 
-- **Data Analytics Job Simulation** – Deloitte Australia  
-- **Data Visualization: Empowering Business with Effective Insights**
-- **Hp gaming garage edx - Game development
+No frameworks – pure frontend
 
----
+📂 Project Structure
+portfolio/
+│── index.html
+│── style.css
+│── script.js
+│── profile-pic.png
+│── README.md
 
-## 📬 Contact
+📌 Selected Projects
 
-- 📧 Email: [nehalgaherwar23@gmail.com](mailto:nehalgaherwar23@gmail.com)
-- 💼 Linkedin : https://www.linkedin.com/in/nehal-gaherwar-854073378
-- 📍 Location: Nagpur, Maharashtra, India
+Portfolio Website
+Personal responsive website showcasing skills and resume
 
----
+Data Visualization Demo
+Dashboards and charts for presenting insights from datasets
 
-## 📄 License
+Edusafe Web Page
+Smart India Hackathon (SIH) 2025 project under the Disaster Management theme
 
-This project is open-source and free to use for learning and inspiration.
+🎓 Education
 
----
+B.Tech – Information Technology
+Ratan Tata Maharashtra State Skill University (RTMSSU)
 
-© 2026 **Nehal Gaherwar**
+HSC (Science)
+Om Saty Sai Junior College (OSSJC)
 
+SSC
+Pride Convent and School
+
+📜 Certifications
+
+Data Analytics Job Simulation – Deloitte Australia
+
+Data Visualization: Empowering Business with Effective Insights
+
+HP Gaming Garage (edX) – Game Development
+
+📬 Contact
+
+📧 Email: nehalgaherwar23@gmail.com
+
+💼 LinkedIn: https://www.linkedin.com/in/nehal-gaherwar-854073378
+
+💻 GitHub: https://github.com/nehalgaherwar
+
+📍 Location: Nagpur, Maharashtra, India
+
+📄 License
+
+This project is open-source and free to use for learning, inspiration, and personal projects.
+
+© 2026 Nehal Gaherwar
