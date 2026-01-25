@@ -109,3 +109,12 @@ button {
 button:hover {
   background: #1e40af;
 }
+@media (max-width: 768px) {
+  .resume {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    text-align: center;
+  }
+}
