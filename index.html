@@ -1,107 +1,561 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Nehal Gaherwar | Resume</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nehal Gaherwar | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#07111f;
+      color:white;
+    }
+
+    a{
+      text-decoration:none;
+      color:white;
+    }
+
+    /* NAVBAR */
+
+    nav{
+      width:100%;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:fixed;
+      top:0;
+      z-index:1000;
+      background:#07111fe8;
+      backdrop-filter:blur(8px);
+    }
+
+    nav h2{
+      font-size:24px;
+      font-weight:700;
+      color:#ff6b57;
+    }
+
+    nav ul{
+      display:flex;
+      gap:30px;
+      list-style:none;
+    }
+
+    nav ul li a{
+      transition:0.3s;
+      font-size:15px;
+    }
+
+    nav ul li a:hover{
+      color:#ff6b57;
+    }
+
+    /* HERO SECTION */
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:120px 8%;
+      gap:40px;
+      flex-wrap:wrap;
+    }
+
+    .hero-text{
+      flex:1;
+      min-width:300px;
+    }
+
+    .hero-text p{
+      font-size:20px;
+      color:#ff6b57;
+      margin-bottom:10px;
+    }
+
+    .hero-text h1{
+      font-size:65px;
+      line-height:1.2;
+      margin-bottom:20px;
+    }
+
+    .hero-text h1 span{
+      color:#ff6b57;
+    }
+
+    .hero-text .desc{
+      color:#b8b8b8;
+      max-width:550px;
+      margin-bottom:30px;
+      line-height:1.7;
+    }
+
+    .btns{
+      display:flex;
+      gap:20px;
+      margin-top:20px;
+    }
+
+    .btn{
+      padding:14px 28px;
+      border-radius:8px;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .primary{
+      background:#ff6b57;
+    }
+
+    .primary:hover{
+      background:#ff533b;
+      transform:translateY(-3px);
+    }
+
+    .secondary{
+      border:2px solid #ff6b57;
+    }
+
+    .secondary:hover{
+      background:#ff6b57;
+    }
+
+    /* IMAGE */
+
+    .hero-image{
+      flex:1;
+      display:flex;
+      justify-content:center;
+      min-width:300px;
+      position:relative;
+    }
+
+    .circle{
+      width:420px;
+      height:420px;
+      background:#ff6b57;
+      border-radius:50%;
+      position:absolute;
+      filter:blur(20px);
+      opacity:0.25;
+    }
+
+    .hero-image img{
+      width:350px;
+      border-radius:20px;
+      position:relative;
+      z-index:2;
+      animation:float 3s ease-in-out infinite;
+    }
+
+    @keyframes float{
+      0%{
+        transform:translateY(0px);
+      }
+      50%{
+        transform:translateY(-12px);
+      }
+      100%{
+        transform:translateY(0px);
+      }
+    }
+
+    /* SECTION */
+
+    section{
+      padding:80px 8%;
+    }
+
+    .section-title{
+      font-size:42px;
+      margin-bottom:40px;
+      color:#ff6b57;
+    }
+
+    /* ABOUT */
+
+    .about{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:40px;
+      align-items:center;
+    }
+
+    .about-box{
+      background:#0d1b2e;
+      padding:30px;
+      border-radius:20px;
+      transition:0.3s;
+    }
+
+    .about-box:hover{
+      transform:translateY(-8px);
+      box-shadow:0 0 20px rgba(255,107,87,0.2);
+    }
+
+    .about-box h3{
+      margin-bottom:15px;
+      color:#ff6b57;
+    }
+
+    .about-box p{
+      color:#bfbfbf;
+      line-height:1.8;
+    }
+
+    /* SKILLS */
+
+    .skills{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .skill-card{
+      background:#0d1b2e;
+      padding:25px;
+      border-radius:15px;
+    }
+
+    .skill-card h3{
+      margin-bottom:15px;
+    }
+
+    .bar{
+      width:100%;
+      height:10px;
+      background:#1b2d45;
+      border-radius:10px;
+      overflow:hidden;
+    }
+
+    .fill{
+      height:100%;
+      background:#ff6b57;
+      border-radius:10px;
+    }
+
+    /* PROJECTS */
+
+    .projects{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .project-card{
+      background:#0d1b2e;
+      padding:25px;
+      border-radius:20px;
+      transition:0.3s;
+    }
+
+    .project-card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 0 25px rgba(255,107,87,0.15);
+    }
+
+    .project-card h3{
+      color:#ff6b57;
+      margin-bottom:15px;
+    }
+
+    .project-card p{
+      color:#bfbfbf;
+      line-height:1.7;
+    }
+
+    /* CONTACT */
+
+    .contact{
+      text-align:center;
+    }
+
+    .contact p{
+      margin:15px 0;
+      color:#c7c7c7;
+    }
+
+    .socials{
+      margin-top:20px;
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .socials a{
+      background:#0d1b2e;
+      padding:12px 20px;
+      border-radius:10px;
+      transition:0.3s;
+    }
+
+    .socials a:hover{
+      background:#ff6b57;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      border-top:1px solid #1a2a40;
+      color:#999;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:768px){
+
+      nav ul{
+        gap:15px;
+      }
+
+      .hero{
+        padding-top:150px;
+        text-align:center;
+      }
+
+      .hero-text h1{
+        font-size:42px;
+      }
+
+      .btns{
+        justify-content:center;
+      }
+
+      .hero-image img{
+        width:280px;
+      }
+
+      .circle{
+        width:300px;
+        height:300px;
+      }
+
+    }
+
+  </style>
 </head>
+
 <body>
 
-<div class="resume">
+  <!-- NAVBAR -->
 
-  <!-- LEFT SIDE -->
-  <aside class="sidebar">
-    <img src="profile-pic.png" alt="Nehal Gaherwar">
+  <nav>
+    <h2>Nehal Portfolio</h2>
 
-    <h1>Nehal Gaherwar</h1>
-    <p class="title">B.Tech IT Student</p>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <section>
-      <h3>Contact</h3>
-      <p>📍 Nagpur, India</p>
-      <p>📧 nehalgaherwar23@gmail.com</p>
-      <p>🔗 linkedin.com/in/nehal-gaherwar-854073378</p>
-      <p>💻 github.com/nehalgaherwar</p>
-    </section>
+  <!-- HERO -->
 
-    <section>
-      <h3>Skills</h3>
-      <div class="skill">
-        <span>HTML & CSS</span>
-        <div class="bar"><div class="fill" data-width="85%"></div></div>
-      </div>
-      <div class="skill">
-        <span>JavaScript</span>
-        <div class="bar"><div class="fill" data-width="70%"></div></div>
-      </div>
-      <div class="skill">
-        <span>Java</span>
-        <div class="bar"><div class="fill" data-width="65%"></div></div>
-      </div>
-      <div class="skill">
-        <span>Data Analysis</span>
-        <div class="bar"><div class="fill" data-width="60%"></div></div>
-      </div>
-    </section>
-  </aside>
+  <section class="hero" id="home">
 
-  <!-- RIGHT SIDE -->
-  <main class="content">
+    <div class="hero-text">
+      <p>Hello 👋</p>
 
-    <section>
-      <h2>Profile</h2>
-      <p>
-        Aspiring Software Developer and B.Tech IT student at Ratan Tata Maharashtra State Skill University.
-        Passionate about web development, data visualization, and building real-world projects.
-        Actively learning full-stack development and contributing on GitHub.
+      <h1>
+        I'm <span>Nehal</span><br>
+        Software Developer
+      </h1>
+
+      <p class="desc">
+        B.Tech IT student passionate about Web Development,
+        UI/UX Design, Data Visualization and Full Stack Projects.
+        Building modern and responsive websites with clean design.
       </p>
-    </section>
 
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li><strong>B.Tech – Information Technology</strong><br>
-          RTMSSU University</li>
-        <li><strong>HSC – Science</strong><br>
-          Om Saty Sai Junior College</li>
-        <li><strong>SSC</strong><br>
-          Pride Convent and School</li>
-      </ul>
-    </section>
+      <div class="btns">
+        <a href="#projects" class="btn primary">View Projects</a>
 
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Portfolio Website</strong> – Responsive resume & portfolio</li>
-        <li><strong>Edusafe Web Page</strong> – SIH 2025 Disaster Management project</li>
-        <li><strong>Data Visualization Demo</strong> – Charts & dashboards</li>
-      </ul>
-    </section>
+        <a href="resume.pdf" class="btn secondary" download>
+          Download CV
+        </a>
+      </div>
+    </div>
 
-    <section>
-      <h2>Experience</h2>
-      <p>
-        <strong>Student / Intern</strong><br>
-        Participant – Smart India Hackathon 2025<br>
-        Worked on team-based web solutions and problem-solving projects.
-      </p>
-    </section>
+    <div class="hero-image">
+      <div class="circle"></div>
 
-    <section>
-      <h2>Certificates</h2>
-      <ul>
-        <li>Data Analytics Job Simulation – Deloitte</li>
-        <li>Data Visualization Job Simulation</li>
-        <li>HP Gaming Garage – Game Development</li>
-      </ul>
-    </section>
+      <!-- YOUR IMAGE -->
+      <img src="profile-pic.png" alt="Nehal">
+    </div>
 
-    <button onclick="downloadResume()">⬇ Download Resume</button>
+  </section>
 
-  </main>
-</div>
+  <!-- ABOUT -->
 
-<script src="script.js"></script>
+  <section id="about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+
+      <div class="about-box">
+        <h3>Who I Am</h3>
+
+        <p>
+          I am a B.Tech Information Technology student from
+          Ratan Tata Maharashtra State Skill University.
+          I enjoy creating responsive websites and solving
+          real-world problems through technology.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>Experience</h3>
+
+        <p>
+          Participated in Smart India Hackathon 2025 and
+          worked on disaster management web solutions,
+          portfolio websites and dashboard projects.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>Achievements</h3>
+
+        <p>
+          Completed certifications in Data Analytics,
+          Visualization and Game Development while improving
+          full stack development skills.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+
+  <section id="skills">
+
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills">
+
+      <div class="skill-card">
+        <h3>HTML & CSS</h3>
+
+        <div class="bar">
+          <div class="fill" style="width:90%"></div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>JavaScript</h3>
+
+        <div class="bar">
+          <div class="fill" style="width:75%"></div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Java</h3>
+
+        <div class="bar">
+          <div class="fill" style="width:70%"></div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Data Analysis</h3>
+
+        <div class="bar">
+          <div class="fill" style="width:65%"></div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section id="projects">
+
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects">
+
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+
+        <p>
+          Modern responsive portfolio website with
+          dark UI design and smooth animations.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>EduSafe Web App</h3>
+
+        <p>
+          Disaster management and education-based
+          solution built for SIH 2025.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Data Dashboard</h3>
+
+        <p>
+          Interactive charts and visualization dashboard
+          for analytics and reports.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section class="contact" id="contact">
+
+    <h2 class="section-title">Contact Me</h2>
+
+    <p>📍 Nagpur, India</p>
+
+    <p>📧 nehalgaherwar23@gmail.com</p>
+
+    <div class="socials">
+
+      <a href="https://github.com/nehalgaherwar" target="_blank">
+        GitHub
+      </a>
+
+      <a href="https://linkedin.com/in/nehal-gaherwar-854073378" target="_blank">
+        LinkedIn
+      </a>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Nehal Gaherwar | All Rights Reserved
+  </footer>
+
 </body>
 </html>
